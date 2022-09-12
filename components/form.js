@@ -44,7 +44,7 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const res = await axios.post('http://localhost:3000/api/contact', {nom, tel, email})
+        const res = await axios.post('https://amd-beta.vercel.app/api/contact', {nom, tel, email})
         console.log(res.data)
         setName('');
         setTel('');

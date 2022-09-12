@@ -10,7 +10,7 @@ export default async (req, res) => {
   }
   console.log("sent")
   try {
-    const data = await axios.post('http://127.0.0.1:8000/send/', body)
+    const data = await axios.post('https://amd-backend.herokuapp.com/send/', body)
     .then(res => {return res.data})
     console.log(data)
     res.status(200).json({sent: data})
