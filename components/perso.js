@@ -1,5 +1,6 @@
 
 import Image from "next/image"
+import Link from "next/link"
 import BtnFilled from "./btn-filled"
 
 const Perso = () => {
@@ -38,9 +39,12 @@ const Perso = () => {
             </div>
             </div>
         </div>
-        <div className="mt-6 md:mt-10 px-6 md:px-32">
-            <BtnFilled text={"Ma séance gratuite"} />
-        </div>
+        <Link href="#contact">
+           <div className="mt-6 md:mt-10 px-6 md:px-32">
+                <BtnFilled text={"Ma séance gratuite"} />
+            </div> 
+        </Link>
+        
         </>
 
     )

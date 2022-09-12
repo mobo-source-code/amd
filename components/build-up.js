@@ -1,12 +1,13 @@
 import Image from "next/image"
+import Link from "next/link"
 import BtnFilled from "./btn-filled"
 
 
 const BuildUp = () => {
     return (
         <div className="flex space-x-0 md:-space-x-72">
-            <div className="hidden md:block relative top-40 left-0 w-full -z-10">
-                    <Image height={963} width={835} src="https://treurgia.sirv.com/amd/man-in-phone.png" />
+            <div className="hidden md:block relative top-40 left-0 w-2/3 -z-10">
+                    <Image height={480} width={415} src="https://treurgia.sirv.com/amd/man-in-phone.png" />
             </div>
             <div className="flex flex-col mt-20 px-6 md:px-0 md:mt-40">
                 <h1 className="font-bold text-3xl md:text-5xl font-head">
@@ -35,9 +36,12 @@ const BuildUp = () => {
                     <br/>
                     D’avoir de vrai chances de réussite. <br/>
                 </p>
-                <div className="mt-10 md:mt-14">
-                    <BtnFilled text={"Ma séance gratuite"} />
-                </div>
+                <Link href="#contact">
+                    <div className="mt-10 md:mt-14">
+                        <BtnFilled text={"Ma séance gratuite"} />
+                    </div>
+                </Link>
+                
             </div>
         </div>
     )

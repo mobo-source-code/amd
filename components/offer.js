@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import BtnFilled from "./btn-filled"
 import BtnOutlined from "./btn-outlined"
 
@@ -22,9 +23,13 @@ const Offer = () => {
                         <Image height={937} width={892} src="https://treurgia.sirv.com/amd/ice.png" />
                     </div>
             </div>
-            <div>
-                <BtnOutlined text={"Séance Gratuite"} />
-            </div>
+            <Link href="#contact">
+                <div>
+                    <BtnOutlined text={"Séance Gratuite"} />
+                </div>
+            </Link>
+
+            
         </div>
     )
 }

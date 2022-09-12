@@ -1,5 +1,6 @@
 
 import Image from "next/image"
+import Link from "next/link"
 import BtnFilled from "./btn-filled"
 
 const Rocket = () => {
@@ -27,9 +28,13 @@ const Rocket = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-10 md:mt-20 px-6 md:px-96">
-                <BtnFilled text="Ma séance gratuite" />
-            </div>
+            <Link href="#contact">
+                <div className="mt-10 md:mt-20 px-6 md:px-96">
+                    <BtnFilled text="Ma séance gratuite" />
+                </div>
+            </Link>
+
+            
         </>
         
         

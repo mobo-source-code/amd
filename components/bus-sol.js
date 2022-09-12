@@ -1,3 +1,4 @@
+import Link from "next/link"
 import BtnOutlined from "./btn-outlined"
 
 
@@ -5,8 +6,8 @@ import BtnOutlined from "./btn-outlined"
 const BusSol = () => {
 
     return (
-        <div className="flex flex-col bg-primary px-6 md:px-32 py-8 mt-20 md:mt-40">
-            <h1 className="font-bold text-3xl md:text-6xl font-head text-white">
+        <div id="sol" className="flex flex-col bg-primary px-6 md:px-32 py-8 mt-20 md:mt-40">
+            <h1 className="font-bold text-3xl md:text-5xl font-head text-white">
             Cette Formation est
             le chemin le plus rapide 
             pour lancer ta carrière !
@@ -28,9 +29,12 @@ const BusSol = () => {
                 des profils de dévéloppeur web. La demande est Enorme et l’offre est insuffisante, 
                 gravement insuffisante.<br/>
             </p>
-            <div className="mt-10 w-full">
-                <BtnOutlined text="Ma séance gratuite" />
-            </div>
+            <Link href="#contact">
+                <div className="mt-10 w-full">
+                    <BtnOutlined text="Ma séance gratuite" />
+                </div>
+            </Link>
+            
 
         </div>
     )

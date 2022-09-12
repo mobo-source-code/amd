@@ -1,3 +1,4 @@
+import Link from "next/link"
 import BtnFilled from "./btn-filled"
 import ListPoint from "./list-point"
 
@@ -10,11 +11,15 @@ const BulletPoints2 = () => {
             avec impatience.
             </h1>
             <ListPoint text={"+ 30 Défi à résoudre"} />
+            <ListPoint text={"+ 7 Projet Complet"} />
             <ListPoint text={"Tu vas créer 3 Site web complet"} />
             <ListPoint text={"Tu vas créer ton propre site web 'Portofolio'"} />
-            <div className="mt-4 md:mt-8">
-                <BtnFilled text={"Ma séance gratuite"} />
-            </div>
+            <Link href="#contact">
+                <div className="mt-4 md:mt-8">
+                    <BtnFilled text={"Ma séance gratuite"} />
+                </div>
+            </Link>
+            
         </div>
     )
 }

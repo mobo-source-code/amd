@@ -1,3 +1,4 @@
+import Link from "next/link"
 import BtnFilled from "./btn-filled"
 
 
@@ -26,9 +27,12 @@ const Portfolio = () => {
                     sont les plus rapide et les plus. <br/>
                     efficaces sur le marché
                 </h1>
-                <div className="mt-8 md:mt-14">
-                    <BtnFilled text={"Ma séance gratuite"} />
-                </div>
+                <Link href="#contact">
+                    <div className="mt-8 md:mt-14">
+                        <BtnFilled text={"Ma séance gratuite"} />
+                    </div>
+                </Link>
+                
                 
         </div>
     )

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Go = () => {
 
     return (
-        <div className="p-10 flex flex-col md:flex-row justify-center space-y-10 md:space-x-40 items-center">
+        <div id="contact" className="p-10 flex flex-col md:flex-row justify-center space-y-10 md:space-x-40 items-center">
             <div className="flex flex-col space-y-6">
                 <div className="flex justify-center">
                     <Image height={355} width={265} src="https://treurgia.sirv.com/amd/Uncle_Sam_(pointing_finger)%201.png" />
